@@ -45,6 +45,9 @@ nav .container{
     display: flex;
     column-gap: 15px;
 }
+.nav_list_wrap:nth-child(3){
+    display: none;
+}
 .nav_list_item{
     display: flex;
 }
@@ -90,7 +93,12 @@ nav .container{
     align-items: center;
     column-gap: 15px;
 }
-.header_info_item a{
+.header_info_items{
+    display: flex;
+    column-gap: 10px;
+}
+.header_info_items,
+.header_info_items a{
     text-decoration: none;
 }
 .messenger{
@@ -100,23 +108,23 @@ nav .container{
     border-radius: 4px;
     padding: 10px 15px;
 }
-.header_info_item h3{
+.header_info_items h3{
     color: var(--primary-sec-color);
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
 }
-.header_info_item h3 a{
+.header_info_items h3 a{
     text-decoration: none;
     color: var(--primary-sec-color);
 }
-.header_info_item p{
+.header_info_items p{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: var(--primary-sec-color);
 }
-.header_info_item:last-child p{
+.header_info_items:last-child p{
     text-decoration-line: underline;
     opacity: 0.7;
 }
@@ -134,15 +142,23 @@ nav .container{
 .header_client_item{
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 5px;
+    padding: 0 10px;
+}
+.header_client_item:nth-child(2n){
+    border-left: 1px solid #E1E5F8;
+    border-right: 1px solid #E1E5F8;
 }
 .header_client_item p{
    color: var(--primary-sec-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    width: 82px;
 }
-
+.header_form{
+    width: 100%;
+}
 .header_form button{
     width: 165px;
     height: 53px;
@@ -155,16 +171,23 @@ nav .container{
     border: none;
     border-radius: 5px;
 }
+.search_mob{
+    display: none;
+}
 .header_form form{
     display: flex;
+}
+.header_form form{
+    width: 100%;
 }
 .header_form input{
     background-color: #F4F5FA;
 }
 .header_form  input[type="text"]{
-    width: 550px;
+    width: 80%;
     border: none;
     padding-left: 20px;
+    border-radius: 6px 0px 0px 6px;
 }
 .header_form  input[type="text"]::placeholder{
     color: #C2C5DA;
@@ -198,6 +221,7 @@ nav .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 10px;
 }
 .content_box h3{
     font-weight: 500;
@@ -219,7 +243,7 @@ nav .container{
     color: #005BB9;
     text-decoration: none;
 }
-.content_box .price span{
+.content_box .price .sale{
     font-size: 22px;
     line-height: 26px;
     text-decoration-line: line-through;
@@ -243,6 +267,7 @@ nav .container{
 }
 .slider_wraper_img img{
     height: 100%;
+    width: 100%;
 }
 .cirkel_in{
     display: flex;
@@ -320,6 +345,25 @@ nav .container{
     padding: 25px 15px;
     height: 190px;
 }
+.sale_wrap_img span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+}
+.sale_wrap_img{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.sale_wrap_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .slider_sale_item h3{
     font-weight: 500;
     font-size: 16px;
@@ -334,7 +378,7 @@ nav .container{
 }
 .price_btn{
     display: flex;
-    margin-top: 15px;
+    margin-top: 10px;
     align-items: center;
     justify-content: space-between;
 }

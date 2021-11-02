@@ -50,46 +50,56 @@
                     <a href="#">Контакты</a>
                 </div>
             </div>
+            <div class="nav_list_wrap">
+                <div class="nav_list_item dropdown">
+                    <a href="#">Еще</a>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="header">
         <div class="container">
             <div class="header_info_row">
-                <div class="header_info_item">
+                <div class="header_info_item logo">
                         <img src="img/ran.png" alt="">
                    <div class="header_wrap_content">
                        <h3>AVT-ZAP</h3>
                        <p>Интернет-магазин запчастей для АКПП</p></div>
                 </div>
                 <div class="header_info_item">
-                    <img src="img/time.png" alt="">
-                    <div class="header_wrap_content">
-                        <p>Мы работаем: будни - 9:00-21:00</p>
-                        <p>сб. - 10:00-15:00</p>
-                    </div>
-                </div>
-                <div class="header_info_item">
-                    <a href="#">
-                        <img src="img/location_dark.png" alt="">
+                    <div class="header_info_items">
+                        <img src="img/time.png" alt="">
                         <div class="header_wrap_content">
-                            <p>Невский пр-т, д. 45</p>
+                            <p>Мы работаем: будни - 9:00-21:00</p>
+                            <p>сб. - 10:00-15:00</p>
                         </div>
-                    </a>
-                </div>
-                <div class="header_info_item">
-                    <a href="#">
-                        <div class="messenger">
-                            <img src="img/whatsapp.png" alt="">
-                            <p>Напишите нам в WhatsApp</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="header_info_item">
-                    <div class="header_wrap_content">
-                        <h3><a href="tel:+7 383 291 92 86">+7 383 291 92 86</a></h3>
-                        <p>форма обратной связи</p>
+                    </div>
+                    <div class="header_info_items">
+                        <a href="#">
+                            <img src="img/location_dark.png" alt="">
+                            <div class="header_wrap_content">
+                                <p>Невский пр-т, д. 45</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
+                  <div class="header_info_item">
+                      <div class="header_info_items">
+                          <a href="#">
+                              <div class="messenger">
+                                  <img src="img/whatsapp.png" alt="">
+                                  <p>Напишите нам в WhatsApp</p>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="header_info_items">
+                          <div class="header_wrap_content">
+                              <h3><a href="tel:+7 383 291 92 86">+7 383 291 92 86</a></h3>
+                              <p>форма обратной связи</p>
+                          </div>
+                      </div>
+                  </div>
+
             </div>
             <div class="header_client_panel">
                 <div class="header_form">
@@ -99,7 +109,9 @@
                     </button>
                     <form action="serch">
                         <input type="text" placeholder="Поиск по наименованию или артикулу">
-                        <button type="submit">Найти</button>
+                        <button type="submit"><span>Найти</span>
+                            <img  class="search_mob" src="img/search_mob.png" alt="">
+                        </button>
                     </form>
                 </div>
                 <div class="header_client_wrap">
@@ -131,7 +143,7 @@
                             <div class="content_box">
                                 <h3>Сцепление в сборе</h3>
                                 <p>0AMCLUTCH</p>
-                                <p class="price">14 499,99 ₽  <span class="sale">18 550,99 ₽</span></p>
+                                <div class="price"><span>14 499,99 ₽ </span> <span class="sale">18 550,99 ₽</span></div>
                                 <button>
                                     <img src="img/basket_with.png" alt="">
                                     <span>В корзину</span>
@@ -154,7 +166,7 @@
                             <div class="content_box">
                                 <h3>Сцепление в сборе</h3>
                                 <p>0AMCLUTCH</p>
-                                <p class="price">14 499,99 ₽  <span class="sale">18 550,99 ₽</span></p>
+                                <div class="price"><span>14 499,99 ₽ </span> <span class="sale">18 550,99 ₽</span></div>
                                 <button>
                                     <img src="img/basket_with.png" alt="">
                                     <span>В корзину</span>
@@ -177,7 +189,7 @@
                             <div class="content_box">
                                 <h3>Сцепление в сборе</h3>
                                 <p>0AMCLUTCH</p>
-                                <p class="price">14 499,99 ₽  <span class="sale">18 550,99 ₽</span></p>
+                                <div class="price"><span>14 499,99 ₽</span>  <span class="sale">18 550,99 ₽</span></div>
                                 <button>
                                     <img src="img/basket_with.png" alt="">
                                     <span>В корзину</span>
@@ -202,6 +214,7 @@
             <div class="slider_sale_wrap">
                 <div class="slider_sale_item">
                     <div class="sale_wrap_img">
+                        <span>Акция</span>
                         <img src="img/avt 5.png" alt="">
                     </div>
                     <div class="sale_wrap_content">
@@ -215,6 +228,7 @@
                 </div>
                 <div class="slider_sale_item">
                     <div class="sale_wrap_img">
+                        <span>Акция</span>
                         <img src="img/avt 7.png" alt="">
                     </div>
                     <div class="sale_wrap_content">
