@@ -62,10 +62,36 @@
         line-height: 35px;
 
     }
+    .main_item:nth-child(4n - 4){
+        display: none;
+    }
+    .main_panel img:last-child{
+        display: none;
+    }
+    .news_item:last-child{
+        display: none;
+    }
+    .f_main_con{
+        flex-direction: column;
+    }
+    .footer_content{
+        width: 100%;
+    }
+    .footer_info_wrap:nth-child(2){
+        flex-direction: row;
+        column-gap: 15px;
+    }
+    .footer_into_item:first-child{
+        flex-direction: column;
+    }
+    .social_link{
+        justify-content: start;
+    }
+    .footer_info{
+        row-gap: 20px;
+    }
+
 }
-
-
-
 
 @media screen and (max-width: 860px){
     nav .container{
@@ -153,6 +179,17 @@
     .next{
         display: none;
     }
+    .main_container_wrap_item{
+        justify-content: center;
+    }
+    .main_item{
+        max-width: 232px;
+        flex: 1 1 50%;
+    }
+    .main_wrap_img{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 720px){
@@ -164,5 +201,56 @@
     }
     .slider_wraper_img{
         height: 60%;
+    }
+    .line{
+        display: none;
+    }
+    .news_container .container{
+        flex-direction: column;
+    }
+    .data_wrap:before,
+    .data_wrap:after{
+        display: none;
+    }
+    .news_item:last-child{
+        display: flex;
+    }
+    .footer_content{
+        flex-direction: column;
+    }
+    .footer_content_item,
+    .footer_info_item
+    {
+        margin-bottom: 25px;
+    }
+    .footer_info_wrap,
+    .footer_info_wrap:nth-child(2){
+        flex-direction: column;
+    }
+    .footer_info_wrap input{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 515px){
+    .main_item{
+        max-width: 150px;
+    }
+    .main_rating a{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .main_content h3{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .btn_main span{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .btn_main{
+      padding: 13px 15px;
+    }
+    .main_panel{
+        column-gap: 10px;
     }
 }
